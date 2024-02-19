@@ -33,14 +33,11 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.4.0</muleVersion>
-						<username>sid0128</username>
-						<password>Kimmybest#3</password>
-						<applicationName>deploy-poc</applicationName>
-						<environment>Sandbox</environment>
-						<properties>
-							<key>value</key>
-						</properties>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
+						<applicationName>${app.name}</applicationName>
+						<environment>${env}</environment>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
